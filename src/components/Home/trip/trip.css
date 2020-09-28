@@ -1,0 +1,59 @@
+.tripContentImg , .tripContentTitle , .tripContentBox {
+    background-color: rgb(230, 228, 228);
+}
+
+.tripContentBox {
+    height: 250px;
+    padding: 20px;
+    margin: 20px 10%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    .tripContentBox {
+        flex-direction: column;
+        height: 400px;
+    }
+}
+
+.tripContentTitle , .tripContentImg {
+    flex: 1;
+    overflow: hidden
+}
+
+.tripContentTitle {
+    margin-left: 10px;
+}
+
+.ContentImg {
+    filter: grayscale(1);
+    transition: 1s;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.tripContentBox:hover .ContentImg {
+    filter: grayscale(0);
+}
+
+.tripContentBox:hover {
+    box-shadow: 3px 5px 6px rgb(95, 94, 94);
+    transform: scale(1.05)
+}
+
+.price {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.tags {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 8px 4px; 
+    font-size: 10px;
+}

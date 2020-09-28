@@ -1,0 +1,10 @@
+.SelectScore {
+    margin-right: 15px;
+}
+
+select {
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    font-weight: bold;
+}
